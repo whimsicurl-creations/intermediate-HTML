@@ -1,4 +1,13 @@
 /* CSS Styles */
 body {
-    background-image: url(../pix2/stripes.png);
+    /* background-image: url(../pix2/hubblestransparent.png), url(../pix2/stars.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;*/
+    background: url(../pix2/hubblestransparent.png) center no-repeat fixed,
+                url(../pix2/stars.png) center no-repeat fixed black;
+    background-size: contain,
+                     cover;
 }
