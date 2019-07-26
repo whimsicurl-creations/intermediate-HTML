@@ -11,13 +11,56 @@ body {
     background-size: contain,
                      cover;
 }
+/* Fixed-position sized to edges of viewport */
 #wrapper {
     position: fixed;
     top: 10%;
     left: 10%;
     bottom: 10%;
     right: 10%;
+    /* White for older browser, rgba for newer */
     background: white;
-    background: rgba(255, 255, 255, .8);
+    background: rgba(255, 255, 255, .6);
     border-radius: 10px;
+}
+/* Make HTML5 layout elements block elements for older browsers */
+header, nav, aside, article, footer, section {
+    display: block;
+}
+/* Style that applies to both header and footer */
+header, footer {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    padding: 1%;
+}
+header {
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 0 0;
+}
+footer {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+}
+/* This nav section is on the side, positioned absolutely */
+nav {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    bottom: 15%;
+    width: 15%;
+    padding: 1%;
+}
+/* Main article sized to fit inside header, footer, nav */
+article {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    right: 0;
+    bottom: 15%;
+    padding: 10px;
+    overflow: auto;
+    background: rgba(255, 255, 255, .6);
 }

@@ -9,8 +9,37 @@
     <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <script>
+    //Make older browsers aware of new HTML5 layout tags
+    'header nav aside article footer section'.replace(/\w+/g, function (n) { document.createElement(n) })
+    </script>
     <div id="wrapper">
-        
-    </div>
+        <header>
+            Header
+        </header>
+        <nav>
+            Nav
+        </nav>
+        <article>
+            Top
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+            <p>Paragraph 9</p>
+            <p>Paragraph 10</p>
+            <p>Paragraph 11</p>
+            <p>Paragraph 12</p>
+            <p>Paragraph 13</p>
+            Bottom
+        </article>
+        <footer>
+            Footer
+        </footer>
+    </div><!-- End wrapper -->
 </body>
 </html>
