@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visibility</title>
+    <style>
+        #allboxes {
+            width: 100px;
+            padding: 5px;
+            border: dotted 1px gray;
+        }
+        .small {
+            width: 100px;
+            height: 100px;
+            border: solid 1px black;
+            color: white;
+        }
+        #middle {
+            /* visibility: hidden; */
+            display: none;
+        }
+        #allboxes:hover #middle {
+            /* visibility: visible; */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="allboxes">
+        <div class="small" style="background: red">
+            Box 1
+        </div>
+        <div class="small" id="middle" style="background: green">
+            Box 2
+        </div>
+        <div class="small" style="background: blue">
+            Box 3
+        </div>
+    </div>
+</body>
+</html>
