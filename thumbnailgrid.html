@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thumbnail Grid Gallery</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
     <style>
         /* Center the table */
         table.thumbs {
@@ -41,6 +42,14 @@
             visibility: visible;
         }
     </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //ipad and iphone fix
+            if ((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/iPad/i))) {
+                $("table.thumbs td").click(function () {});
+            }
+        });
+    </script>
 </head>
 <body>
     <table class="thumbs">
