@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thumbnail Grid Gallery</title>
+    <style>
+        /* Center the table */
+        table.thumbs {
+            margin: 0 auto;
+        }
+        /* Style for each table cell */
+        table.thumbs td {
+            position: relative;
+            padding: 0 2px;
+        }
+        /* Small image in each cell */
+        table.thumbs img.small {
+            width: 100px;
+        }
+        /* Large images in left two columns */
+        table.thumbs img.left {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 10;
+            visibility: hidden;
+        }
+        /* Large image in right two columns */
+        table.thumbs img.right {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            z-index: 10;
+            visibility: hidden;
+        }
+        /* Hover on any table cell */
+        table.thumbs td:hover img.left,
+        table.thumbs td:hover img.right {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <table class="thumbs">
+        <tr>
+            <td>
+                <img src="pix2/flower01.png" alt="" class="small">
+                <img src="pix2/flower01.png" alt="" class="left">
+            </td>
+            <td>
+                <img src="pix2/flower02.png" alt="" class="small">
+                <img src="pix2/flower02.png" alt="" class="left">
+            </td>
+            <td>
+                <img src="pix2/flower03.png" alt="" class="small">
+                <img src="pix2/flower03.png" alt="" class="right">
+            </td>
+            <td>
+                <img src="pix2/flower04.png" alt="" class="small">
+                <img src="pix2/flower04.png" alt="" class="right">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="pix2/flower05.png" alt="" class="small">
+                <img src="pix2/flower05.png" alt="" class="left">
+            </td>
+            <td>
+                <img src="pix2/flower06.png" alt="" class="small">
+                <img src="pix2/flower06.png" alt="" class="left">
+            </td>
+            <td>
+                <img src="pix2/flower07.png" alt="" class="small">
+                <img src="pix2/flower07.png" alt="" class="right">
+            </td>
+            <td>
+                <img src="pix2/flower08.png" alt="" class="small">
+                <img src="pix2/flower08.png" alt="" class="right">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="pix2/flower09.png" alt="" class="small">
+                <img src="pix2/flower09.png" alt="" class="left">
+            </td>
+            <td>
+                <img src="pix2/flower10.png" alt="" class="small">
+                <img src="pix2/flower10.png" alt="" class="left">
+            </td>
+            <td>
+                <img src="pix2/flower11.png" alt="" class="small">
+                <img src="pix2/flower11.png" alt="" class="right">
+            </td>
+            <td>
+                <img src="pix2/flower12.png" alt="" class="small">
+                <img src="pix2/flower12.png" alt="" class="right">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
