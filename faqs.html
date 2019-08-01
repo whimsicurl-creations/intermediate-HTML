@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQs</title>
+    <style>
+        .faqs div:first-letter,
+        .faqs p:first-letter {
+            font: bold 1.5em Arial Black, Gadget, sans-serif;
+            color: navy;
+            text-shadow: 2px 2px #ccc;
+        }
+        .faqs div p {
+            display: none;
+        }
+        .faqs div:hover p {
+            display: block;
+            margin-left: 2em;
+            background-color: #cef;
+            margin-top: 0;
+        }
+        .faqs div {
+            cursor: help;
+        }
+    </style>
+</head>
+<body>
+    <div class="faqs">
+        <div>
+            Q. This is the first question?
+            <p>A. This is the first answer.</p>
+        </div>
+        <div>
+            Q. This is the second question?
+            <p>A. This is the second answer.</p>
+        </div>
+    </div>
+</body>
+</html>
