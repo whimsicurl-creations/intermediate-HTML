@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nav Practice</title>
+    <style type="text/css">
+        /* Make HTML5 layout elements for older browsers */
+        header, nav, aside, article, footer, section {
+            display: block;
+        }
+        /* Style for link tags in nav section */
+        nav a {
+            /* background-color: gray; */
+            background: url(pix2/navback.png) center repeat-x, url(pix2/navhover.png) center repeat-x;
+            color: white;
+            text-decoration: none;
+            outline: none;
+            padding: 10px 0;
+            width: 20%;
+            text-align: center;
+            display: block;
+            float: left;
+            border-right: solid 1px silver;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+        }
+        /* Unvisited and visited link styling */
+        nav a:link, nav a:visited {
+            /* background-color: gray;
+            color: white; */
+            background: url(pix2/navback.png);
+        }
+        /* Styling for hover and tap */
+        nav a:hover, nav a:active, nav a.currentpage {
+            /* background-color: silver; */
+            background: url(pix2/navhover.png);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+   
+<script>
+    //Make older browsers aware of new HTML5 layout tags
+    'header nav aside article footer section'.replace(/\w+/g, function (n) { document.createElement(n) });
+</script>
+
+    <nav>
+        <a href="#" class="currentpage">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Services</a>
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+    </nav>
+</body>
+</html>
