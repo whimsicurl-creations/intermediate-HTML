@@ -26,11 +26,10 @@
             font-family: Arial, Helvetica, Sans-Serif;
             font-size: 12pt;
             color: black;
+            width: 100px;
         }
-        /* Each list item inside horizontal menu bar */
+        /* Each list item inside vertical menu bar */
         nav ul li {
-            float: left;
-            width: 20%;
             position: relative;
             z-index: 10;
         }
@@ -47,7 +46,7 @@
             width: 100%;
             text-align: center;
         }
-        /* Unvisited/visited links in horizontal bar */
+        /* Unvisited/visited links in vertical bar */
         nav a:link, nav a:visited {
             background: url(pix2/navback2.png) repeat-x;
             color: black;
@@ -57,27 +56,29 @@
             background: url(pix2/navhover2.png) repeat-x;
             color: yellow;
         }
-        /* Drop-down menu for each item in menu bar */
+        /* Flyout menu for each item in menu bar */
         nav ul li ul {
             background: #40A2EE;
             box-shadow: 0 40px 40px -20px black inset;
             position: absolute;
+            top: 0;
+            left: 99px;
             z-index: 11;
-            width: 100%;
-            /* visibility: hidden; */
+            width: 150px;
+            visibility: hidden;
         }
-        /* Make drop-down visibile when hovering on menu bar item */
+        /* Make flyout visibile when hovering on menu bar item */
         nav ul li:hover ul {
             visibility: visible;
         }
-        /* Individual list items in drop-down menus */
+        /* Individual list items in flyout menus */
         nav ul li ul li {
             width: 100%;
             float: none;
             height: 44px;
             line-height: 44px;
         }
-        /* Links in drop-down menus */
+        /* Links in flyout menus */
         nav ul li ul li a,
         nav ul li ul li a:link,
         nav ul li ul li a:visited {
@@ -91,7 +92,7 @@
             text-decoration: none;
             outline: none;
         }
-        /* Hover and active states in drop down menu */
+        /* Hover and active states in flyout menu */
         nav ul li ul li a:hover,
         nav ul li ul li a:active {
             background: #13619B;
@@ -104,7 +105,7 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li>
-                <span>Top 2</span>
+                <span>Side 2</span>
                     <ul>
                         <li><a href="#">Sub 2-1</a></li>
                         <li><a href="#">Sub 2-2</a></li>
@@ -112,7 +113,7 @@
                     </ul>
             </li>
             <li>
-                <span>Top 3</span>
+                <span>Side 3</span>
                     <ul>
                         <li><a href="#">Sub 3-1</a></li>
                         <li><a href="#">Sub 3-2</a></li>
@@ -121,14 +122,14 @@
                     </ul>
             </li>
             <li>
-                <span>Top 4</span>
+                <span>Side 4</span>
                     <ul>
                         <li><a href="#">Sub 4-1</a></li>
                         <li><a href="#">Sub 4-2</a></li>
                     </ul>
             </li>
             <li>
-                <span>Top 5</span>
+                <span>Side 5</span>
                     <ul>
                         <li><a href="#">Sub 5-1</a></li>
                         <li><a href="#">Sub 5-2</a></li>
