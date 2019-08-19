@@ -20,3 +20,50 @@ h1, h2, h3, h4, h5, h6 {
     /* Center the layout */
     margin: 0 auto;
 }
+/* Style rules for formal, captioned figures */
+figure {
+    width: 80%;
+    max-width: 600px;
+    clear: both;
+    margin: 1em auto;
+    border: solid 1px gray;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px silver;
+}
+figure img {
+    width: 100%;
+    display: block;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+figcaption {
+    font: 10pt/10pt Verdana, Tahoma, sans-serif;
+    padding: 2px 4px;
+}
+/* Left-floating pictures */
+figure.floatleft {
+    float: left;
+    width: 33%;
+    max-width: 400px;
+    margin: 0 10px 0 0;
+}
+/* Right-floating pictures */
+figure.floatright {
+    float: right;
+    width: 33%;
+    max-width: 400px;
+    margin: 0 0 0 10px;
+}
+/* Pictures with no caption */
+figure.nocaption figcaption {
+    display: none;
+}
+/* Pictures in the side columns */
+.columns aside img {
+    display: block;
+    width: 90%;
+    margin: 0.5em auto;
+    border: solid 1px gray;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px 3px silver;
+}

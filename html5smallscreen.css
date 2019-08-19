@@ -35,3 +35,30 @@
     background-color: #ddd;
     border-left: solid 1px gray;   
 }
+/* Hide entire left column */
+/* .columns aside.left {
+    display: none;
+} */
+/* Hide left column images */
+/* .columns aside.left img {
+    display: none;
+} */
+/* Size left column images */
+/* .columns aside.left img {
+    max-height: 100px;
+    width: auto;
+} */
+/* Shrink and float the column images */
+.columns aside img {
+    width: 29%;
+    margin: 1%;
+    float: left;
+}
+/* Hide column text */
+.columns aside p {
+    display: none;
+}
+/* This ensures that the background for the column is as tall as the images */
+.columns aside {
+    overflow: hidden;
+}
