@@ -6,19 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thumbnails Zoom</title>
     <style>
+        /* Set size of overall table */
         table.zoom {
             width: 450px;
+            /* leave room for zoomed images to expand beyond table */
             margin: 100px auto;
         }
+        /* Set size of each cell in the table */
         table.zoom td {
             width: 33%;
-        }        
+        }
+        /* Set size of image to fill table cell */
         table.zoom img {
             width: 100%;
         }
         /* Enlarge image on hover */
         table.zoom img:hover {
+            -moz-transform: scale(2.5);
+            -ms-transform: scale(2.5);
+            -o-transform: scale(2.5);
+            -webkit-transform: scale(2.5);
             transform: scale(2.5);
+            -moz-transition: all ease-out 1s;
+            -ms-transition: all ease-out 1s;
+            -o-transition: all ease-out 1s;
+            -webkit-transition: all ease-out 1s;
+            transition: all ease-out 1s;
         }
     </style>
 </head>
