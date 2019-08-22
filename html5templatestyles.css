@@ -67,3 +67,40 @@ figure.nocaption figcaption {
     border-radius: 4px;
     box-shadow: 3px 3px 3px 3px silver;
 }
+/* Frame for picture that looks like a photo snapshot */
+figure.snapshot {
+    padding: 4%;
+    background: white;
+    border-radius: 0;
+    margin: 10px auto;
+    margin: 60%;
+    border: solid 1px gray;
+    box-shadow: 3px 3px 3px 3px silver;
+}
+/* Picture inside photo snapshot */
+figure.snapshot img {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+}
+/* Caption for photo snapshot */
+figure.snapshot figcaption {
+    padding: none;
+    font: 12pt/14pt 'Lucida Handwriting', 'Lucida Calligraphy', 'Comic Sans MS', cursive;
+}
+/* Left-tilted photo */
+figure.tiltleft {
+    -moz-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+}
+/* Right-tilted photo */
+figure.tiltright {
+    -moz-transform: rotate(6deg);
+    -ms-transform: rotate(6deg);
+    -o-transform: rotate(6deg);
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+}
